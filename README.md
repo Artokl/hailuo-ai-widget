@@ -1,23 +1,25 @@
-# Hailuo AI Video Generator Widget
+# Hailuo AI Video Generator Widget (Production-Ready)
 
-An interactive, high-conversion widget prototype designed for **Overchat AI / Pandaverse**. This is not just a UI; it's a lead-generation tool built with a focus on psychological engagement and user retention.
+Updated version of the interactive widget prototype for **Overchat AI / Pandaverse**. 
+This version focuses on full technical functionality and seamless product integration.
 
-## "Vibe-Coder" Enhancements
-*   **3D Tilt Experience:** Implemented a physics-based tilt effect (Framer Motion) that makes the widget feel "alive" and premium, responding to the user's cursor.
-*   **AI Synthesis Simulation:** Instead of a static loading bar, users see a real-time stream of "Neural Logs." This simulates backend complexity, increasing the perceived value of the generated result.
-*   **The "Pro" Reveal:** The final result features a cinematic blur-reveal effect and teasers for Pro features (4K, Music), strategically designed to maximize registration intent.
-*   **Fast-Track UX:** Added clickable hashtags (#Cyberpunk, #Pixar) and an "Enhance ✨" button to lower the friction for first-time users.
+## Key Technical Improvements
+*   **Functional Image-to-Video:** Implemented native file handling with `URL.createObjectURL` for instant previews and removal logic.
+*   **Intelligent Prompt Enhancement :** Built a procedural expansion engine that analyzes user keywords (nature, city, portrait, space) to generate high-fidelity cinematic prompts instead of static strings.
+*   **Stable Asset Delivery:** Replaced unreliable video links with high-availability CDN streams to ensure zero "gray screen" frames.
+*   **Custom UI Architecture:** Built accessible, animated select-components that handle click-outside events and state persistence, replacing standard browser elements.
+
+## Product & Conversion Features
+*   **Native Registration Flow:** Integrated a high-fidelity "Open Web App" CTA leading directly to the Overchat production environment to maximize user conversion.
+*   **Simulated Backend Polling:** Generation logic now mimics the provided Cloudflare Worker behavior, using a staged logging system to reduce perceived latency.
+*   **Visual Fidelity:** Added a physics-based glow effect and Framer Motion transitions for a premium "vibe."
 
 ## Tech Stack
-- **React.js + Vite** (Ultra-fast development & build)
-- **Tailwind CSS** (Clean, maintainable utility-first styling)
-- **Framer Motion** (Industry-standard for advanced web animations)
-- **Cloudflare Workers** (Architecture prepared for secure API proxying)
-
-## How to run
-1. Clone the repo
-2. `npm install`
-3. `npm run dev`
+- **React + Vite**
+- **Framer Motion** (Advanced animations)
+- **Lucide React** (Industry-standard iconography)
+- **Tailwind CSS** (Production-ready styling)
+- **Cloudflare Workers** (Proxy logic prepared in `worker.js`)
 
 ## Architecture
-Included `worker.js` demonstrates how to proxy API requests to Hailuo/OpenAI while keeping sensitive API keys hidden from the client side.
+The project includes a `worker.js` file demonstrating how to handle secure API proxying and prompt enhancement on the edge, following the provided architectural patterns.
